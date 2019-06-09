@@ -3,10 +3,50 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:gif="http://wpfanimatedgif.codeplex.com"
         xmlns:local="clr-namespace:Chat1._0._0._0"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        
+        Title="MainWindow" Height="755.74" Width="510">
+    <Grid Background="HotPink">
+        <Button Margin="10,9,426,649.4" RenderTransformOrigin="0.501,0.22">
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-90"/>
+                    <TranslateTransform X="-19.108" Y="18.972"/>
+                </TransformGroup>
+            </Button.RenderTransform>
+
+            <Image gif:ImageBehavior.AnimatedSource="C:\Repos\Chat\Chat1.0.0.0\szczala.gif" Height="50" Width="50" HorizontalAlignment="Center" VerticalAlignment="Bottom">
+            </Image>
+        </Button>
+        <Button Height="60" Width="59" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="92,15,0,0" >
+            <Button.Template>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Grid>
+                        <Ellipse Fill="Pink"/>
+                        <ContentPresenter Content="{TemplateBinding Content}" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    </Grid>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+        <Label Margin="172,15,29,646.4" Background="MediumOrchid" FontSize="40" FontStyle="Italic" HorizontalContentAlignment="Center" >
+            Dariusz
+        </Label>
+
+        <Grid Margin="0,88,0,128.4">
+            <ListView Background="Chartreuse" >
+                <GridView>
+                    <GridViewColumn x:Name="Picture" Width="80" DisplayMemberBinding="{Binding Photo}"></GridViewColumn>
+                    <GridViewColumn x:Name="Message" DisplayMemberBinding="{Binding Message}"></GridViewColumn>
+                </GridView>
+            </ListView>
+        </Grid>
+
+        <TextBox Margin="10,624,95,28.4" Background="DeepPink" FontSize="15" TextWrapping="Wrap">
+
+        </TextBox>
+        <Button Margin="420,624,10,28.4"/>
     </Grid>
 </Window>
