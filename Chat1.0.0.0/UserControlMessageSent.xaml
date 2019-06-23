@@ -7,8 +7,7 @@
              d:DesignHeight="450" d:DesignWidth="800">
     <Grid>
         <Border Background="Gray" CornerRadius="15 15 0 15" Margin="10 12">
-            <TextBlock Margin="15" TextWrapping="Wrap" Text="Message..." Foreground="White"/>
+            <TextBlock Margin="15" TextWrapping="Wrap" Text="Message" Foreground="White"/>
         </Border>
-        <TextBlock Text="Thu 5:45PM" HorizontalAlignment="Right" VerticalAlignment="Bottom" FontSize="10" Margin="10 0"/>
     </Grid>
 </UserControl>
