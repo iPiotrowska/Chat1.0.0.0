@@ -15,34 +15,27 @@ using System.Windows.Shapes;
 namespace Chat1._0._0._0
 {
     /// <summary>
-    /// Interaction logic for Logging.xaml
+    /// Interaction logic for Register.xaml
     /// </summary>
-    public partial class Logging : Window
+    public partial class Register : Window
     {
-        public Logging()
+        public Register()
         {
             InitializeComponent();
         }
 
         private void btnSubmit_Click(object sender, RoutedEventArgs e)
         {
-            if (txtUsername.Text == "Joanna" && txtPassword.Password == "Joanna")
+            if(txtPassword.Password==txtPassword2.Password)
             {
-                MainWindow chat = new MainWindow();
-                chat.Show();
+                Logging logging = new Logging();
+                logging.Show();
                 this.Close();
             }
             else
             {
-                MessageBox.Show("Username or password is incorrect.");
+                MessageBox.Show("Repeated password is incorrect.");
             }
-        }
-
-        private void BtnRegister_Click(object sender, RoutedEventArgs e)
-        {
-            Register register = new Register();
-            register.Show();
-            this.Close();
         }
     }
 }
