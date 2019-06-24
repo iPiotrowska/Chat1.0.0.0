@@ -10,6 +10,10 @@ namespace Chat1._0._0._0
             InitializeComponent();
         }
 
-        public string Message { get; set; }
+        public void changeMessage(String message)
+        {
+            TextBlock textBlock = (TextBlock)this.FindName("Message");
+            textBlock.Text = message;
+        }
     }
 }

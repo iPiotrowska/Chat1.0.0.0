@@ -37,5 +37,12 @@ namespace Chat1._0._0._0
                 MessageBox.Show("Repeated password is incorrect.");
             }
         }
+
+        private void btnBack_Click(object sender, RoutedEventArgs e)
+        {
+            Logging logging = new Logging();
+            logging.Show();
+            this.Close();
+        }
     }
 }

@@ -36,7 +36,7 @@ namespace Chat1._0._0._0
         private void Button_Sent_Click(object sender, RoutedEventArgs e)
         {
             UserControlMessageSent sentMessage = new UserControlMessageSent();
-            sentMessage.Message = textBoxMessage.Text;
+            sentMessage.changeMessage(textBoxMessage.Text);
             ListOfMessages.Children.Add(sentMessage);
             textBoxMessage.Clear();
         }
