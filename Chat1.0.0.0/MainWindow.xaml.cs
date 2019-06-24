@@ -37,6 +37,7 @@ namespace Chat1._0._0._0
         {
             UserControlMessageSent sentMessage = new UserControlMessageSent();
             sentMessage.changeMessage(textBoxMessage.Text);
+            sentMessage.HorizontalAlignment = HorizontalAlignment.Right;
             ListOfMessages.Children.Add(sentMessage);
             textBoxMessage.Clear();
         }

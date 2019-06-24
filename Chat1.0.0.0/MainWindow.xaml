@@ -46,7 +46,7 @@
                         <ColumnDefinition Width="70"/>
                         <ColumnDefinition Width="70"/>
                     </Grid.ColumnDefinitions>
-                    <TextBox Name="textBoxMessage" Grid.Column="0" MaxHeight="80" TextWrapping="Wrap" Margin="5" AcceptsReturn="True" VerticalScrollBarVisibility="Auto"/>
+                    <TextBox Name="textBoxMessage" Grid.Column="0"  MaxHeight="80" TextWrapping="Wrap" Margin="5" AcceptsReturn="True" VerticalScrollBarVisibility="Auto"/>
                     <Button Grid.Column="3" VerticalAlignment="Bottom" Click="Button_Sent_Click" Style="{StaticResource MaterialDesignFloatingActionMiniButton}">
                         <materialDesign:PackIcon Kind="Send"/>
                     </Button>
@@ -202,7 +202,7 @@
 
             
             <Button Name="buttonFacebook" Height="72" Margin="20,9,179,-30" >
-                <Hyperlink NavigateUri="https:\\www.facebook.com" TextDecorations="None" RequestNavigate="Hyperlink_RequestNavigate">
+                <Hyperlink NavigateUri="https://www.facebook.com/smutnegrubaski/" TextDecorations="None" RequestNavigate="Hyperlink_RequestNavigate">
                 <Image Source="./facebook.jpg"></Image>
                 </Hyperlink>
             </Button>
